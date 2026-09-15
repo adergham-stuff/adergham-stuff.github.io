@@ -1,10 +1,10 @@
 .Body {
-    background-color: rgba(38, 4, 27, 0.678);
+    background-color: rgb(26, 8, 20);
     margin: 0;
 }
 
 .Title {
-    color: rgb(200, 169, 169);
+    color: rgb(230, 200, 210);
     text-align: center;
     /*font-family:   for adding a font only to this*/
     font-size: 42px;
@@ -13,37 +13,56 @@
     margin: 0;
     padding: 30px 20px 25px;
 
-    border-bottom: 2px solid rgba(200, 169, 169, 0.5);
+    border-bottom: 2px solid rgba(230, 200, 210, 0.4);
+
+    background-image: linear-gradient(rgba(120, 40, 90, 0.75), rgba(200, 30, 130, 0.75)), url('images/images (1).jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .TopBar {
-    background-color: rgba(38, 4, 27, 0.678);
+    background-color: rgb(26, 8, 20);
     padding: 15px 20px;
     text-align: left;
     a {
-    color: rgb(200, 169, 169);
-    text-decoration: none; /*gets rid of underline*/
-    margin-right: 15px; /*adds space between links*/
-    transition: color 0.2s; /*adds a smooth transition effect when hovering over links*/
-}
+        color: rgb(230, 200, 210);
+        text-decoration: none; /*gets rid of underline*/
+        margin-right: 15px; /*adds space between links*/
+        transition: color 0.2s; /*adds a smooth transition effect when hovering over links*/
+    }
 
-a:hover {
-    color: rgb(255, 220, 220);
-}
+    a:hover {
+        color: rgb(255, 225, 235);
+    }
 }
 
 .TopBarRight {
     float: right;
 }
 
-.Description p {
-    color: rgb(200, 169, 169);
-
+.Description {
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRItf-90GS-XKdvFwuhyo3l5FSUv7zMwW6AFYYiyy9fDvSDxrfzFiYI0sM&s=10');
-
     background-size: cover;
-    padding: 100px;
     background-position: center;
-    text-align: center;
-    margin: 0;
+    padding: 40px;
+    overflow: hidden; /* keeps the container from collapsing around the float */
+}
+
+.ProfileImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid rgba(200, 30, 130, 0.6);
+    float: left;
+    margin: 0 20px 20px 0; /* space between image and wrapping text */
+}
+
+.DescriptionText {
+    display: inline-block;
+    color: rgb(230, 200, 210);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(26, 8, 20, 0.75);
+    padding: 30px;
+    border-radius: 10px;
 }
