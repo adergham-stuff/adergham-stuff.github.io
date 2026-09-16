@@ -16,7 +16,8 @@
     border-bottom: 2px solid rgba(230, 200, 210, 0.4);
 
     background-image: linear-gradient(rgba(120, 40, 90, 0.75), rgba(200, 30, 130, 0.75)), url('images/banner.png');
-    background-size: cover;
+   background-size: contain;
+    background-repeat: repeat-x;
     background-position: center;
 }
 
@@ -41,6 +42,7 @@
 }
 
 .Description {
+    
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRItf-90GS-XKdvFwuhyo3l5FSUv7zMwW6AFYYiyy9fDvSDxrfzFiYI0sM&s=10');
     background-size: cover;
     background-position: center;
