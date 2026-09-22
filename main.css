@@ -168,5 +168,26 @@ font-size: 17px;
 line-height: 1.6;
 margin-bottom: 0;
 }
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .Title {
+        font-size: 34px;
+    }
 
+    .TopBar {
+        text-align: center;
+    }
 
+    .TopBarRight {
+        float: none;
+        margin-top: 10px;
+    }
+
+    .FutureProjectCard {
+        margin: 25px 15px;
+    }
+
+    .Projects {
+        padding: 0 15px;
+    }
+}
